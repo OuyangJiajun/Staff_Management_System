@@ -10,17 +10,6 @@ int main()
 	int choice = 0;//代表用户选择
 	while(true)
 	{
-		/*测试代码
-		Worker* worker = new Employee(1, "张三", 1);
-		worker->showInfo();
-		delete worker;
-		worker = new Manager(2, "李四", 2);
-		worker->showInfo();
-		delete worker;
-		worker = new Boss(3, "王五", 3);
-		worker->showInfo();
-		delete worker;
-		*/
 		system("cls");
 		workmanager.Show_Menu();
 		cout << "请输入您的选择" << endl;
@@ -31,17 +20,17 @@ int main()
 			break;
 		case 1:workmanager.Add_Emp();//添加职工
 			break;
-		case 2://显示职工
+		case 2:workmanager.Show_Emp();//显示职工
 			break;
-		case 3://删除职工
+		case 3:workmanager.Del_Emp();//删除职工
 			break;
-		case 4://修改职工
+		case 4:workmanager.Mod_Emp();//修改职工
 			break;
-		case 5://查找职工
+		case 5:workmanager.Find_Emp();//查找职工
 			break;
-		case 6://排序职工
+		case 6:workmanager.Sort_Emp();//排序职工
 			break;
-		case 7://清空文件
+		case 7:workmanager.Clean_File();//清空文件
 			break;
 		default:
 			break;
